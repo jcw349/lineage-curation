@@ -32,13 +32,13 @@ cd /workspace/ui/linolium
 ./run-prod.sh /workspace/<tree_with_lineages>.jsonl.gz # Starts frontend web UI on port 3000, backend on 8001
 ```
 
-## Start with your own tree
+## Use your own tree
 ```bash
 # find your Docker container ID
 docker ps -a
 
 # copy MAT protobuf file into container
-docker cp /path/to/mat.pb CONTAINER_ID:/workspace/data
+docker cp /path/to/<input_tree_with_lineage.pb> CONTAINER_ID:/workspace/
 ```
 
 
